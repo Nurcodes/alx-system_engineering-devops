@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script uses until loop to print "Best School" 10times
 
-i=0
+i=1
 
 until [ $i -gt 10 ]
 do
