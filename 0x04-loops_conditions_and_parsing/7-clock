@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script prints the clock for 12:59 mins
+
+mins=1
+hour=0
+
+while [ $hour -le 12 ]
+do
+	mins=1
+
+	echo "Hour: $hour"
+
+	while [ $mins -le 59 ]
+	do
+		echo "$mins"
+		((mins++))
+	done
+
+	((hour++))
+done
+	
