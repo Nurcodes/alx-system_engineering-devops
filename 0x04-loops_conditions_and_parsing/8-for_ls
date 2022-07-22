@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script uses a for loop to print ls command
+
+len=$(ls | wc -l)
+c=1
+for (( i=0; i<len; i++ ));
+do
+	n=$(ls | cut -d '-' -f 2)
+	echo "$n" | head -n $c | tail -1
+	((c++))
+done
