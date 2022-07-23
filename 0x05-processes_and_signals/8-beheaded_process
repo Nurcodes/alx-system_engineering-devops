@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script uses pkill
+
+pkill -9 -f ./7-highlander
